@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="script.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1 class="text-primary text-center"><strong>JS CALCULATOR</strong></h1>
+        <div class="calculator text-center">
+            <div class="history text-right">
+                <p></p>
+            </div>
+            <div>
+                <p class="text-right" id="display">0</p>
+            </div>
+
+            <div class="buttons text-center">
+                <!-- first row of buttons -->
+                <button class="btn btn-primary text-center value">8</button>
+                <button class="btn text-center btn-primary value">9</button>
+                <button class="btn text-center btn-danger" id="ac">AC</button>
+                <button class="btn text-center btn-danger" id="ce">CE</button>
+
+                <!-- second row of buttons -->
+                <button class="btn text-center btn-primary value">5</button>
+                <button class="btn text-center btn-primary value">6</button>
+                <button class="btn text-center btn-primary value">7</button>
+                <button class="btn text-center btn-warning operator" id="plus">+</button>
+
+                <!-- third row of buttons -->
+                <button class="btn text-center btn-primary value">2</button>
+                <button class="btn text-center btn-primary value">3</button>
+                <button class="btn text-center btn-primary value">4</button>
+                <button class="btn text-center btn-warning operator" id="minus">-</button>
+
+                <!-- fourth row of buttons, 0 is two buttons lonng -->
+                <button class="btn text-center btn-primary value" id="zero">0</button>
+                <button class="btn text-center btn-primary value">1</button>
+                <button class="btn text-center btn-warning operator" id="divide">&divide;</button>
+
+                <!-- fifth row of buttons -->
+                <button class="btn text-center btn-primary value">.</button>
+                <button class="btn text-center btn-success" id="equals">=</button>
+                <button class="btn text-center btn-warning operator" id="times">x</button>
+            </div>
+
+        </div>
+    </div>
+</body>
+</html>
